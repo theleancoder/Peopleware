@@ -9,7 +9,7 @@ is a fast, unopinionated, minimalist web framework for Node.js.
 To run the app:
 npm install -> npm start
 
-To automatically resart the server on any file changes:
+To automatically restart the server on any file changes:
 nodemon run dev
 
 Express link:
