@@ -21,7 +21,9 @@ http://nodemon.io/
 Download MongoDB:
 https://www.mongodb.org/downloads#production
 
-Make a database named #peopleware.
+Make a database named
+#peopleware.
 
-Read about #mongoose:
+Read about
+#mongoose:
 http://mongoosejs.com/
