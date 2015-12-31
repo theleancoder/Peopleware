@@ -17,3 +17,11 @@ http://expressjs.com/
 
 Nodemon link:
 http://nodemon.io/
+
+Download MongoDB:
+https://www.mongodb.org/downloads#production
+
+Make a database named #peopleware.
+
+Read about #mongoose:
+http://mongoosejs.com/
