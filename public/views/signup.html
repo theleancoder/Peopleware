@@ -32,18 +32,25 @@
         <form name="signUpForm" ng-submit="authCtrl.signup()" action="/" method="POST" novalidate>
           <div class="form-group">
             <label>Email</label>
-            <input type="email" name="email"  class="form-control" placeholder="Enter your email" ng-model="authCtrl.user.email" required />
+            <input type="email"
+              name="Email"
+              class="form-control"
+              placeholder="Enter your email"
+              ng-model="authCtrl.user.email"
+              required />
             <div class="alert alert-danger" ng-show="signUpForm.Email.$error.email">
-              <h5>Plese enter a valid email address</h5>
+              <h6>Plese enter a valid email address</h6>
             </div>
           </div>
 
           <div class="form-group">
             <label>Password</label>
-            <input type="password" name="password" class="form-control" placeholder="Enter your password" ng-model="authCtrl.user.password" required />
-            <div class="alert alert-danger" ng-show="signUpForm.Password.$error.required && signUpForm.Password.$touched">
-              <h5>Password is required for signup</h5>
-            </div>
+            <input type="password"
+              name="password"
+              class="form-control"
+              placeholder="Enter your password"
+              ng-model="authCtrl.user.password"
+              required />
           </div>
 
 
