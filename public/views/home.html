@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <link href="../css/home.css" rel="stylesheet">
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Peopleware</a>
+        </div>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <button type="button" class="btn btn-default navbar-btn navbar-left" data-toggle="modal" data-target="#myModal">Ask With Video</button>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a ui-sref="logout">Logout</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a ui-sref="profile">Profile</a></li>
+                <li><a data-toggle="modal" data-target="#myModal1">Start Session</a></li>
+                <li><a data-toggle="modal" data-target="#myModal2">Start Campaign</a></li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container margin">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- <div class="sidebar-nav"> -->
+        <div>
+          <ul>
+            <h4>Live Sessions</h4>
+            <hr width="100%" align="left">
+            <div>
+              <li class="active"><a href="#">Link</a>
+              </li>
+
+            </div>
+            <br>
+            <li><a href="#">Link</a>
+            </li>
+            <br>
+            <li><a href="#">Link</a>
+            </li>
+            <br>
+            <li><a href="#">Link</a>
+            </li>
+          </ul>
+          <div class="bottom">
+            <a href="#">Past sessions</a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div>
+          <ul>
+            <h4>Top Campaigns</h4>
+            <hr width="100%" align="left">
+            <li class="active"><a href="#">Link</a>
+            </li>
+            <br>
+            <li><a href="#">Link</a>
+            </li>
+            <br>
+            <li><a href="#">Link</a>
+            </li>
+            <br>
+            <li><a href="#">Link</a>
+            </li>
+          </ul>
+          <div class="bottom">
+            <a href="#">See all</a>
+            <br>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+      <!--/span-->
+      <div class="col-md-6">
+        <h4>Trending Uploads</h4>
+        <hr width="100%" align="left">
+        <div>
+          <p>
+            Marques uploaded a video to <b>Question</b>
+          </p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/h0BSqrfXBjM" frameborder="0" allowfullscreen></iframe>
+          <div>
+            <div class="inline">
+              <button class="btn btn-primary">Upvote</button>
+            </div>
+            <div class="inline1">Comment</div>
+            <div class="inline1">Share</div>
+          </div>
+        </div>
+        <hr width="100%" align="left">
+        <div>
+          <p>
+            Jonathon uploaded a video to <b>Question</b>
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Nm8Ms9m20_Y" frameborder="0" allowfullscreen></iframe>
+          <div>
+            <div class="inline">
+              <button class="btn btn-primary">Upvote</button>
+            </div>
+            <div class="inline1">Comment</div>
+            <div class="inline1">Share</div>
+          </div>
+        </div>
+        <hr width="100%" align="left">
+        <div>
+          <p>
+            John uploaded a video to <b>Question</b>
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PjTj6ZzylW0" frameborder="0" allowfullscreen></iframe>
+          <div>
+            <div class="inline">
+              <button class="btn btn-primary">Upvote</button>
+            </div>
+            <div class="inline1">Comment</div>
+            <div class="inline1">Share</div>
+          </div>
+        </div>
+        <hr width="100%" align="left">
+        <div>
+          <p>
+            Ankit uploaded a video to question <b>Question</b>
+          </p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/h0BSqrfXBjM" frameborder="0" allowfullscreen></iframe>
+          <div>
+            <div class="inline">
+              <button class="btn btn-primary">Upvote</button>
+            </div>
+            <div class="inline1">Comment</div>
+            <div class="inline1">Share</div>
+          </div>
+        </div>
+        <hr width="100%" align="left">
+        <div>
+          <p>
+            Ankit uploaded a video to question <b>Question</b>
+          </p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/h0BSqrfXBjM" frameborder="0" allowfullscreen></iframe>
+          <div>
+            <div class="inline">
+              <button class="btn btn-primary">Upvote</button>
+            </div>
+            <div class="inline1">Comment</div>
+            <div class="inline1">Share</div>
+          </div>
+        </div>
+        <hr width="100%" align="left">
+        <div>
+          <p>
+            Ankit uploaded a video to question <b>Question</b>
+          </p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/h0BSqrfXBjM" frameborder="0" allowfullscreen></iframe>
+          <div>
+            <div class="inline">
+              <button class="btn btn-primary">Upvote</button>
+            </div>
+            <div class="inline1">Comment</div>
+            <div class="inline1">Share</div>
+          </div>
+        </div>
+        <hr width="100%" align="left">
+        <div>
+          <p>
+            Ankit uploaded a video to question <b>Question</b>
+          </p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/h0BSqrfXBjM" frameborder="0" allowfullscreen></iframe>
+          <div>
+            <div class="inline">
+              <button class="btn btn-primary">Upvote</button>
+            </div>
+            <div class="inline1">Comment</div>
+            <div class="inline1">Share</div>
+          </div>
+        </div>
+      </div>
+      <!--/span-->
+      <div class="col-md-3 ">
+        <!-- <div class="sidebar-nav"> -->
+        <div>
+          <ul>
+            <h4>Top Uploaders</h4>
+            <hr align="left ">
+            <li class="active "><a href="# ">Link</a>
+              <div class="inline2">
+                <button class="btn btn-primary">Ask</button>
+              </div>
+            </li>
+            <br>
+            <br>
+            <li><a href="# ">Link</a>
+              <div class="inline2">
+                <button class="btn btn-primary">Ask</button>
+              </div>
+            </li>
+            <br>
+            <br>
+            <li><a href="# ">Link</a>
+              <div class="inline2">
+                <button class="btn btn-primary">Ask</button>
+              </div>
+            </li>
+            <br>
+            <br>
+            <li><a href="# ">Link</a>
+              <div class="inline2">
+                <button class="btn btn-primary">Ask</button>
+              </div>
+            </li>
+          </ul>
+          <br>
+          <div class="bottom">
+            <a href="#">View More</a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div align="center">
+          <div class="inline1">
+            About
+          </div>
+          <div class="inline1">
+            Privacy
+          </div>
+          <div class="inline1">
+            Terms
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">Start A Campaign</h4>
+        </div>
+        <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label class="control-label">Name your campaign</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Short description</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="col-lg-14">
+            <label for="message-text" class="control-label">Add introductory video</label>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search computer">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  Search
+                </button>
+              </span>
+            </div>
+          </div>
+          <br>
+        </form>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">Start A Session</h4>
+        </div>
+        <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label class="control-label">Name your session</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="control-label">Invite people</label>
+            <input type="text" class="form-control" placeholder="Search people">
+          </div>
+          <div class="form-group">
+            <label class="control-label">Add subject</label>
+            <input type="text" class="form-control" placeholder="Search topics">
+          </div>
+        </form>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Ask Via Video</h4>
+        </div>
+        <div class="modal-body">
+          <div class="col-lg-12">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search computer">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  Search
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div align="center">
+          Or
+        </div>
+        <br>
+        <div align="center">
+          <button class="btn btn-primary">Open Camera</button>
+        </div>
+        <br>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

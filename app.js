@@ -6,11 +6,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var session = require('express-session');
-
-var dbConfig = require('./db');
 var mongoose = require('mongoose');
 
-mongoose.connect(dbConfig.url);
+var db = require('./config/db');
+mongoose.connect(db.url);
 
 var app = express();
 
@@ -43,19 +42,21 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var signup = require('./routes/signup');
-var login = require('./routes/login');
-var profile = require('./routes/profile');
-var home = require('./routes/home');
-var campaign = require('./routes/campaign');
-var logout = require('./routes/logout');
+// var signup = require('./routes/signup');
+// var login = require('./routes/login');
+// var profile = require('./routes/profile');
+// var home = require('./routes/home');
+// var campaign = require('./routes/campaign');
+// var logout = require('./routes/logout');
+//
+// app.use('/', signup);
+// app.use('/login', login);
+// app.use('/profile', profile);
+// app.use('/home', home);
+// app.use('/campaign', campaign);
+// app.use('/logout', logout);
 
-app.use('/', signup);
-app.use('/login', login);
-app.use('/profile', profile);
-app.use('/home', home);
-app.use('/campaign', campaign);
-app.use('/logout', logout);
+require('./app/routes')(app, passport);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
